@@ -2,8 +2,6 @@
 import os
 import shutil
 from django.http import HttpResponse
-from django.http import FileResponse
-from django.conf import settings
 from pywebcopy import save_website
 import tempfile
 

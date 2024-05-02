@@ -7,3 +7,6 @@ django
 
 pymongo[srv]
 g4f
+
+#--------------------------------
+pywebcopy

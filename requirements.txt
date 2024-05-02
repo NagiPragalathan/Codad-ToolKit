@@ -10,3 +10,5 @@ g4f
 
 #--------------------------------
 pywebcopy
+lxml[html_clean]
+lxml_html_clean

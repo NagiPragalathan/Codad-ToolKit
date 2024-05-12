@@ -1,0 +1,20 @@
+{% extends "Base/base.html" %}
+
+{% block content %}
+
+
+<div class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center">
+        <form method="post" action="{% url 'download_website' %}" class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+            {% csrf_token %}
+            <h1 class="text-xl font-semibold mb-4">Web Scraper</h1>
+            <p class="text-gray-600 mb-6">A web scraper automates data extraction by tracking HTML links and downloading associated files from websites, offering efficient retrieval for research or analysis.</p>
+            <div class="mb-4">
+                <input type="url" name="url_input" placeholder="https://www.google.com/" class="email-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:border-blue-500" />
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none">Download</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

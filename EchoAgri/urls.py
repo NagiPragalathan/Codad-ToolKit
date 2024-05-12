@@ -19,8 +19,7 @@ from django.urls import path
 from base.Routes.HtmlScraper import download_website
 
 
-urlpatterns = [
-]
+urlpatterns = []
 
 AdminUrl = [
     path("admin/", admin.site.urls),
